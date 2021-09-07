@@ -235,6 +235,22 @@ a:hover{
   font-size: 2rem;
 }
 
+#portfolio-btn {
+  background: none;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 10px 20px 10px 20px;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+#arrow {
+  color: white;
+  margin: 5px;
+}
+
 /* Projects section */
 
 .projects-section {
