@@ -47,7 +47,7 @@ h2 {
 }
 
 h1 {
-  margin-top: -100px;
+  margin-top: 100px;
   font-size: 8rem;
 }
 
@@ -85,7 +85,7 @@ img {
   font-weight: 400;
   position: fixed;
   width: 100%;
-  background-color: #0a1a25;
+  background-color: rgba(10, 26, 37, 0.85);
   border-bottom: 2px solid #3895d3;
 }
 
@@ -115,30 +115,50 @@ img {
 }
 
 .navigation {
-  max-width: 500px;
   line-height: 3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-wrapper ul {
   display: flex;
   font-size: 22px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
   width: 0;
   overflow: hidden;
   transition: 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+  margin-left: 300px;
 }
 
 .nav-wrapper.active ul {
-  width: 420px;
-  margin-right: 65px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a {
+@media (max-width: 700px) {
+  .nav-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgba(56, 149, 211, 0.97);
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    height: 100vh;
+    margin-top: 580px;
+    margin-right: 0;
+    word-spacing: 15px;
+  }
+}
+
+.navigation li {
+  padding-left: 40px;
+}
+
+.navigation a {
   color: white;
   text-decoration: none;
   transition: 0.3s;
@@ -148,13 +168,12 @@ a:hover {
 }
 
 .nav-toggler {
-  position: relative;
+  position: fixed;
   display: inline-block;
   width: 40px;
   height: 10px;
   padding: 12px 5px;
   cursor: pointer;
-  margin-bottom: 10px;
   margin-right: 15px;
 }
 .nav-wrapper:not(.active) .nav-toggler {
@@ -183,20 +202,6 @@ a:hover {
 .nav-wrapper.active .nav-toggler::after {
   transform: rotate(-135deg);
   margin-top: 0;
-}
-
-@media (max-width: 700px) {
-  .nav-wrapper ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
-    background-color: rgba(56, 149, 211, 0.98);
-    justify-content: center;
-    border-radius: 3px;
-    height: 80vh;
-    margin-top: 200%;
-  }
 }
 
 .welcome-section {
