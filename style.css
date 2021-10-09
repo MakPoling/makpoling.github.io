@@ -149,8 +149,7 @@ img {
     border-radius: 3px;
     height: 100vh;
     margin-top: 580px;
-    margin-right: 0;
-    word-spacing: 15px;
+    margin-right: -10px;
   }
 }
 
