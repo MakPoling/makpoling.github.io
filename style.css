@@ -106,7 +106,6 @@ img {
 .nav-wrapper nav {
   position: absolute;
   top: 0;
-  z-index: 1;
   width: 100%;
   height: 100%;
   display: flex;
@@ -124,10 +123,10 @@ img {
   justify-content: center;
   align-items: center;
   list-style: none;
+  z-index: -1;
   width: 0;
   overflow: hidden;
   transition: 0.3s cubic-bezier(0.77, 0, 0.18, 1);
-  margin-left: 300px;
 }
 
 .nav-wrapper.active ul {
@@ -148,13 +147,12 @@ img {
     text-align: center;
     border-radius: 3px;
     height: 100vh;
-    margin-top: 580px;
-    margin-right: -10px;
+    margin-top: 300px;
   }
 }
 
 .navigation li {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .navigation a {
@@ -221,7 +219,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  margin: 20px;
   font-size: 3rem;
   font-weight: 200;
   color: #ff9222;
@@ -338,9 +335,9 @@ a:hover {
   justify-content: center;
   max-width: 100%;
   padding-top: 20px;
-  margin: 20px;
   font-size: 2.5rem;
   font-weight: 200;
+  margin: 20px;
   color: #ff9222;
 }
 
@@ -430,3 +427,4 @@ footer i {
     text-align: center;
   }
 }
+
