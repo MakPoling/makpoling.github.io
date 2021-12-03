@@ -71,9 +71,9 @@ img {
 
 .logo {
   cursor: pointer;
-  height: 100px;
-  width: 100px;
-  margin: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 10px 10px 10px 25px;
 }
 
 .nav {
@@ -152,7 +152,7 @@ img {
 }
 
 .navigation li {
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .navigation a {
