@@ -76,14 +76,11 @@ img {
   margin: 10px 10px 10px 25px;
 }
 
-.nav {
-  position: fixed;
-}
-
 .nav-wrapper {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  position: fixed;
+  position: absolute;
+  top: 0;
   width: 100%;
   background-color: rgba(10, 26, 37, 0.85);
   border-bottom: 2px solid #3895d3;
@@ -92,10 +89,10 @@ img {
 .nav-wrapper::before,
 .nav-wrapper::after {
   content: "";
-  position: relative;
+  position: absolute;
+  top: 0;
   display: block;
   width: 100%;
-  height: 50%;
   background-color: #0a1a25;
 }
 
@@ -123,7 +120,6 @@ img {
   justify-content: center;
   align-items: center;
   list-style: none;
-  z-index: -1;
   width: 0;
   overflow: hidden;
   transition: 0.3s cubic-bezier(0.77, 0, 0.18, 1);
@@ -165,7 +161,7 @@ a:hover {
 }
 
 .nav-toggler {
-  position: fixed;
+  position: absolute;
   display: inline-block;
   width: 40px;
   height: 10px;
@@ -306,8 +302,33 @@ a:hover {
 .project-image {
   border: 2px solid #3c9dfb;
   height: calc(100% - 6.7rem);
-  width: 100%;
   object-fit: cover;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(10, 26, 37, 0.87);
+  color: #f1f1f1;
+  width: 100%;
+  height: 65%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.container:hover .overlay {
+  opacity: 1;
 }
 
 .project-title {
