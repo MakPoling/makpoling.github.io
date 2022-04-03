@@ -343,17 +343,16 @@ a:hover {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 50%;
-  display: flex;
-  margin: 0 auto;
+  margin: 50px auto;
+  width: 80%;
+  padding: 20px;
 }
 
 #about-header {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  text-align: center;
-  align-content: center;
+  margin-top: 50px;
 }
 
 .about-section {
@@ -362,9 +361,10 @@ a:hover {
   align-items: center;
   justify-content: center;
   max-width: 700px;
-  margin: 150px 40px 150px 40px;
-  width: 50%;
+  margin: 0 auto;
+  min-width: 100%;
   border: 1px solid white;
+  text-align: center;
   padding: 10px;
 }
 
@@ -386,16 +386,19 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
-  padding-top: 20px;
+  padding: 20px;
   font-size: 2.5rem;
   font-weight: 200;
-  margin: 20px;
   color: #ff9222;
 }
 
 .skill-icons {
   font-size: 5rem;
+}
+@media screen and (max-width: 1500px) {
+  .parent {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-section {
