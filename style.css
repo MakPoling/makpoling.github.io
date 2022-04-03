@@ -401,6 +401,11 @@ a:hover {
   }
 }
 
+@media (max-width: 600px) {
+  .about-section {
+    font-size: 14px;
+  }
+}
 .contact-section {
   display: flex;
   flex-direction: column;
