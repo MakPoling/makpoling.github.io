@@ -35,6 +35,7 @@ body {
 @media (max-width: 600px) {
   .container {
     width: 75%;
+    margin-bottom: 10%;
   }
 }
 
