@@ -433,6 +433,12 @@ input:placeholder-shown {
   margin: 20px 0px 20px 0px;
 }
 
+@media (max-width: 600px) {
+  .socials {
+    margin: 0;
+  }
+}
+
 .social-links {
   color: white;
   text-shadow: 2px 2px 1px #1f1f1f;
