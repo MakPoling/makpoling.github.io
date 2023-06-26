@@ -145,6 +145,12 @@ body {
   padding: 0 50px;
 }
 
+@media (max-width: 600px) {
+  #intro-desc {
+    width: 100%;
+  }
+}
+
 #home-title {
   font-size: 30px;
 }
@@ -336,6 +342,12 @@ img {
   margin-bottom: 30px;
   font-family: "Share Tech Mono", monospace;
   padding: 20px 20px 0px 20px;
+}
+
+@media (max-width: 600)
+  .about-text {
+    width: 100%;
+  }
 }
 
 /* Contact Page */
