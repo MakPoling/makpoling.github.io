@@ -148,6 +148,7 @@ body {
 @media (max-width: 600px) {
   #intro-desc {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -215,12 +216,6 @@ img {
   align-items: center;
   justify-content: center;
   height: 100%;
-}
-
-@media (max-width: 600px) {
-  .project-text {
-    width: 100%;
-  }
 }
 
 .project-link {
@@ -359,6 +354,7 @@ img {
 @media (max-width: 600)
   .about-text {
     width: 100%;
+    padding: 0;
   }
 }
 
