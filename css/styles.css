@@ -184,6 +184,12 @@ a:hover {
   margin-bottom: 10%;
 }
 
+@media (max-width: 600px) {
+  .projects-container {
+    width: 100%;
+  }
+}
+
 .project {
   width: 50%;
   display: flex;
