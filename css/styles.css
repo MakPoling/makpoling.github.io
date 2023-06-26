@@ -274,6 +274,12 @@ img {
   font-family: "Share Tech Mono", monospace;
 }
 
+@media (max-width: 600px) {
+  .resume-text {
+    margin: 0;
+  }
+}
+
 .resume-btn {
   text-align: center;
 }
