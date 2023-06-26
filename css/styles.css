@@ -353,7 +353,7 @@ img {
   padding: 20px 20px 0px 20px;
 }
 
-@media (max-width: 600px)
+@media (max-width: 600px) {
   .about-text {
     width: 100%;
     padding: 0;
@@ -379,7 +379,7 @@ img {
 @media (max-width: 600px) {
   .contact-text {
     width: 100%;
-    margin: 10px;
+    margin-bottom: 10px;
   }
 }
 
