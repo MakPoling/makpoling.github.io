@@ -249,6 +249,7 @@ img {
   font-family: "Share Tech Mono", monospace;
   color: green;
   cursor: pointer;
+  margin: 10px;
 }
 
 #resume-button:hover {
@@ -260,6 +261,7 @@ img {
   font-family: "Share Tech Mono", monospace;
   color: green;
   cursor: pointer;
+  margin: 10px;
 }
 
 #contact-button:hover {
