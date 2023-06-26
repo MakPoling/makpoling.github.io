@@ -354,6 +354,12 @@ img {
   font-family: "Share Tech Mono", monospace;
 }
 
+@media (max-width: 600px) {
+  .contact-text {
+    width: 100%;
+  }
+}
+
 #contact-container {
   border-radius: 5px;
   background-color: #282828;
