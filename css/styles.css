@@ -276,7 +276,7 @@ img {
 
 @media (max-width: 600px) {
   .resume-text {
-    margin: 0;
+    padding: 0;
   }
 }
 
