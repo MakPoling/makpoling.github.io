@@ -275,7 +275,7 @@ img {
 }
 
 @media (max-width: 600px) {
-  .resume-text {
+  .resume-text, .about-text, .contact-text {
     width: 100%;
   }
 }
