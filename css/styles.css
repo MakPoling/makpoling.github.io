@@ -435,7 +435,7 @@ input:placeholder-shown {
 
 @media (max-width: 600px) {
   .socials {
-    margin-bottom: 25%;
+    margin: 0;
   }
 }
 
