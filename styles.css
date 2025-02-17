@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+body {
+  background: #101010;
+  color: white;
+  font-family: "Share Tech Mono", monospace;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #282828;
+}
+
+/* Containers */
+.container {
+  padding: 20px;
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 75%;
+  }
+}
+
+/* Navigation Menu */
+.navbar {
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-brand:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  font-size: 20px;
+  position: fixed;
+  color: #fff;
+  transform: translateX(-40%);
+  transition: opacity .15s ease-out;
+  right: 0;
+}
+
+@media (min-width: 200px) {
+  .navbar-nav {
+    background-color: #282828;
+  }
+}
+
+.navbar-nav.open {
+  right: 0;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+/* Navigation Toggler */
+.navbar-toggler {
+  border: none;
+  z-index: 999;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  height: 4px;
+  width: 30px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: all 0.25s ease-out;
+  transform-origin: center right;
+  background-color: white;
+}
+
+/* Toggler Style When Collapsed */
+.navbar-toggler span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+  opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+  transform: rotate(0deg);
+}
+
+/* Toggler Style When Not Collapsed */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(0%, -5%) rotate(-40deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(0%, 5%) rotate(40deg);
+}
+
+.nav {
+  transition: transform 0.3s ease-out;
+}
+
+/* Home Page */
+#home-container {
+  border-radius: 5px;
+  background-color: #282828;
+  padding: 20px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+#intro-desc {
+  padding: 0 50px;
+  font-size: 15px;
+}
+
+#home-title {
+  font-size: 38px;
+}
+
+#home-subtitle {
+  font-size: 26px;
+  color: green;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a:hover {
+  color: green;
+}
+
+/* Projects Page */
+.projects-header {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.projects-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.project {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.project-title {
+  font-size: 16px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.project-text {
+  display: flex;        
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-link {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.link-icon {
+  padding-right: 8px;
+}
+
+.project-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.project-desc {
+  text-align: center;
+  font-size: 14px;
+}
+
+#resume-button {
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  color: green;
+  cursor: pointer;
+}
+
+#resume-button:hover {
+  transform: translateY(3px);
+}
+
+#contact-button {
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  color: green;
+  cursor: pointer;
+}
+
+#contact-button:hover {
+  transform: translateY(3px);
+}
+.fa-arrow-right {
+  padding-left: 5px;
+}
+
+/* Resume Page */
+.resume-header {
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Share Tech Mono", monospace;
+}
+
+#resume-container {
+  border-radius: 5px;
+  background-color: #282828;
+}
+
+.resume-text {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.resume-btn {
+  text-align: center;
+}
+
+#resume-btn {
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#resume-btn:hover {
+  transform: translateY(4px);
+}
+
+/* About Page */
+.about-header {
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Share Tech Mono", monospace;
+}
+
+#about-container {
+  border-radius: 5px;
+  background-color: #282828;
+}
+
+#view-work {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Share Tech Mono", monospace;
+  margin: 0 auto;
+  display: block;
+}
+
+#view-work:hover {
+  transform: translateY(4px);
+}
+
+.about-text {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Share Tech Mono", monospace;
+  padding: 20px 20px 0px 20px;
+}
+
+/* Contact Page */
+.contact-header {
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.contact-text {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+#contact-container {
+  border-radius: 5px;
+  background-color: #282828;
+  padding: 30px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "Share Tech Mono", monospace;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Share Tech Mono", monospace;
+  margin: 0 auto;
+  display: block;
+}
+
+#submit-btn:hover {
+  transform: translateY(4px);
+}
+
+input:placeholder-shown {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 30px;
+  margin: 20px 0px 50px 0px;
+}
+
+.social-links {
+  color: white;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.2s ease-out;
+  padding: 10px;
+}
+
+.social-links:hover {
+  transform: translateY(5px);
+  color: green;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  width: 100%;
+  background-color: #282828;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  padding-top: 10px;
+}
