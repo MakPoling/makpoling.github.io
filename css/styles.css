@@ -32,10 +32,9 @@ body {
   width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .container {
-    width: 90%;
-    margin-bottom: 25%;
+    width: 75%;
   }
 }
 
@@ -59,11 +58,12 @@ body {
   font-size: 20px;
   position: fixed;
   color: #fff;
-  transition: right 0.3s ease-in-out;
+  transform: translateX(-40%);
+  transition: opacity .15s ease-out;
   right: 0;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 200px) {
   .navbar-nav {
     background-color: #282828;
   }
@@ -143,29 +143,22 @@ body {
 
 #intro-desc {
   padding: 0 50px;
-}
-
-@media (max-width: 600px) {
-  #intro-desc {
-    width: 100%;
-    padding: 0 0 10px 0;
-    margin: 0;
-    
-  }
+  font-size: 15px;
 }
 
 #home-title {
-  font-size: 30px;
+  font-size: 38px;
 }
 
 #home-subtitle {
-  font-size: 22px;
+  font-size: 26px;
   color: green;
 }
 
 a {
   color: white;
   text-decoration: none;
+  font-size: 22px;
 }
 
 a:hover {
@@ -174,6 +167,7 @@ a:hover {
 
 /* Projects Page */
 .projects-header {
+  font-size: 40px;
   text-align: center;
   margin-top: 5%;
   font-family: "Share Tech Mono", monospace;
@@ -185,12 +179,6 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 10%;
-}
-
-@media (max-width: 600px) {
-  .projects-container {
-    width: 100%;
-  }
 }
 
 .project {
@@ -213,7 +201,7 @@ img {
 }
 
 .project-text {
-  display: flex;
+  display: flex;        
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -249,7 +237,6 @@ img {
   font-family: "Share Tech Mono", monospace;
   color: green;
   cursor: pointer;
-  margin: 10px;
 }
 
 #resume-button:hover {
@@ -261,7 +248,6 @@ img {
   font-family: "Share Tech Mono", monospace;
   color: green;
   cursor: pointer;
-  margin: 10px;
 }
 
 #contact-button:hover {
@@ -289,13 +275,6 @@ img {
   margin: 0 auto;
   padding: 20px;
   font-family: "Share Tech Mono", monospace;
-}
-
-@media (max-width: 600px) {
-  .resume-text {
-    width: 100%;
-    padding: 0 0 20px 0;
-  }
 }
 
 .resume-btn {
@@ -355,13 +334,6 @@ img {
   padding: 20px 20px 0px 20px;
 }
 
-@media (max-width: 600px) {
-  .about-text {
-    width: 100%;
-    padding: 0;
-  }
-}
-
 /* Contact Page */
 .contact-header {
   text-align: center;
@@ -376,13 +348,6 @@ img {
   color: white;
   margin-bottom: 30px;
   font-family: "Share Tech Mono", monospace;
-}
-
-@media (max-width: 600px) {
-  .contact-text {
-    width: 100%;
-    margin-bottom: 10px;
-  }
 }
 
 #contact-container {
@@ -432,15 +397,7 @@ input:placeholder-shown {
   flex-wrap: wrap;
   color: white;
   font-size: 30px;
-  margin: 20px 0px 20px 0px;
-}
-
-@media (max-width: 600px) {
-  .socials {
-    margin-bottom: 10%;
-    margin-top: -20%;
-
-  }
+  margin: 20px 0px 50px 0px;
 }
 
 .social-links {
