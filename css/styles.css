@@ -54,6 +54,12 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  #logo {
+  height: 60px;
+  }
+}
+
 /* Center nav links horizontally */
 .navbar-collapse {
   flex-grow: 1;
