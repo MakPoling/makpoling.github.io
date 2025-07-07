@@ -43,6 +43,7 @@ body {
 .navbar {
   width: 100%;
   background-color: #101010;
+  opacity: 0.99;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -60,7 +61,7 @@ body {
 
 @media (max-width: 600px) {
   #logo {
-  height: 60px;
+  height: 90px;
   }
 }
 
@@ -77,12 +78,16 @@ body {
   gap: 30px;
   margin: 0 auto;
   list-style: none;
-  padding: 0;
+  padding-bottom: 30px;
+}
+
+.nav-item {
+  padding: 5px;
 }
 
 .nav-item a {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -180,7 +185,7 @@ body {
   padding: 20px;
   margin-top: 5%;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 200px;
 }
 
 @media (min-width: 1000px) {
@@ -231,7 +236,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 10%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 @media (min-width: 1000px) {
@@ -327,8 +332,8 @@ img {
 #resume-container {
   border-radius: 5px;
   background-color: #282828;
-  margin-top: 5%;
   text-align: center;
+  margin-top: 3%;
 }
 
 @media (min-width: 1000px) {
@@ -379,7 +384,7 @@ img {
 #about-container {
   border-radius: 5px;
   background-color: #282828;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 @media (min-width: 1000px) {
@@ -412,7 +417,7 @@ img {
   color: white;
   margin-bottom: 30px;
   font-family: "Rubik", sans-serif;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   font-size: 15px;
 }
 
@@ -438,7 +443,7 @@ img {
   border-radius: 5px;
   background-color: #282828;
   padding: 30px;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 @media (min-width: 1000px) {
@@ -503,17 +508,29 @@ input:placeholder-shown {
   color: green;
 }
 
-/* Footer */
-#footer {
-  position:fixed;
-  width: 100%;
-  background-color: #282828;
-  color: white;
-  text-align: center;
-  bottom: 0;
-  margin: 0;
-}
-
 #w3schools, #freecodecamp, #udemy {
   font-size: 15px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  margin-top: auto;
+  background-color: #282828;
+  text-align: center;
+  padding-top: 8px;
+  color: white;
+}
+
+.resume-header,
+.about-header,
+.contact-header,
+.projects-header {
+  margin-top: 150px !important;
 }
