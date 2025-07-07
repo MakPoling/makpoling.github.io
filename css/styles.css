@@ -520,12 +520,12 @@ html, body {
   flex-direction: column;
 }
 
-#footer {
+.footer {
   margin-top: auto;
-  background-color: #282828;
   text-align: center;
   padding-top: 8px;
   color: white;
+  font-size: 14px;
 }
 
 .resume-header,
