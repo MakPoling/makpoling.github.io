@@ -37,6 +37,8 @@ body {
   width: 75%;
 }
 
+
+
 /* Navigation Menu */
 .navbar {
   width: 100%;
@@ -181,6 +183,12 @@ body {
   margin-top: 10%;
 }
 
+@media (min-width: 1000px) {
+  #home-container {
+    max-width: 50%;
+  }
+}
+
 #intro-desc {
   padding: 0 10px;
   font-size: 15px;
@@ -224,6 +232,12 @@ a:hover {
   justify-content: space-between;
   margin-bottom: 10%;
   margin-top: 5%;
+}
+
+@media (min-width: 1000px) {
+  #projects-container {
+    max-width: 50%;
+  }
 }
 
 .project {
@@ -317,6 +331,12 @@ img {
   text-align: center;
 }
 
+@media (min-width: 1000px) {
+  #resume-container {
+    max-width: 50%;
+  }
+}
+
 .resume-text {
   text-align: center;
   line-height: 1.5;
@@ -360,6 +380,12 @@ img {
   border-radius: 5px;
   background-color: #282828;
   margin-top: 5%;
+}
+
+@media (min-width: 1000px) {
+  #about-container {
+    max-width: 50%;
+  }
 }
 
 #view-work {
@@ -413,6 +439,12 @@ img {
   background-color: #282828;
   padding: 30px;
   margin-top: 5%;
+}
+
+@media (min-width: 1000px) {
+  #contact-container {
+    max-width: 50%;
+  }
 }
 
 input[type="text"],
