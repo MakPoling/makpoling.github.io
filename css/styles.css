@@ -183,7 +183,6 @@ body {
   border-radius: 5px;
   background-color: #282828;
   padding: 20px;
-  margin-top: 5%;
   text-align: center;
   margin-top: 200px;
 }
@@ -191,6 +190,12 @@ body {
 @media (min-width: 1000px) {
   #home-container {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  #home-container {
+    margin-top: 100px;
   }
 }
 
