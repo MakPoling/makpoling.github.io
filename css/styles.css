@@ -31,14 +31,6 @@ body {
   cursor: pointer;
 }
 
-/* Containers */
-.container {
-  padding: 20px;
-  width: 75%;
-}
-
-
-
 /* Navigation Menu */
 .navbar {
   width: 100%;
@@ -61,7 +53,7 @@ body {
 
 @media (max-width: 600px) {
   #logo {
-  height: 90px;
+  height: 90x;
   }
 }
 
@@ -195,7 +187,7 @@ body {
 
 @media (max-width: 600px) {
   #home-container {
-    margin-top: 150px;
+    margin-top: 140px;
     width: 85%;
   }
 }
