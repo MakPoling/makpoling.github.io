@@ -250,6 +250,12 @@ a:hover {
   }
 }
 
+@media (max-width: 600px) {
+  #projects-container {
+    width: 85%;
+  }
+}
+
 .project {
   width: 50%;
   display: flex;
@@ -347,6 +353,12 @@ img {
   }
 }
 
+@media (max-width: 600px) {
+  #resume-container {
+    width: 85%;
+  }
+}
+
 .resume-text {
   text-align: center;
   line-height: 1.5;
@@ -399,6 +411,12 @@ img {
 @media (min-width: 1000px) {
   #about-container {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  #about-container {
+    width: 85%;
   }
 }
 
@@ -459,6 +477,12 @@ img {
 @media (min-width: 1000px) {
   #contact-container {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact-container {
+    width: 85%;
   }
 }
 
