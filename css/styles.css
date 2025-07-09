@@ -528,13 +528,6 @@ html, body {
   font-size: 14px;
 }
 
-@media (max-width: 600px) {
-  .footer {
-    margin-top: 5%;
-  }
-}
-
-
 .resume-header,
 .about-header,
 .contact-header,
