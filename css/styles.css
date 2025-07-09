@@ -31,6 +31,13 @@ body {
   cursor: pointer;
 }
 
+/* Containers */
+.container {
+  padding: 20px;
+  width: 75%;
+}
+
+
 /* Navigation Menu */
 .navbar {
   width: 100%;
