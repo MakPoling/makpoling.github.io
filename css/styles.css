@@ -189,13 +189,14 @@ body {
 
 @media (min-width: 1000px) {
   #home-container {
-    max-width: 60%;
+    width: 50%;
   }
 }
 
 @media (max-width: 600px) {
   #home-container {
     margin-top: 150px;
+    width: 75%;
   }
 }
 
