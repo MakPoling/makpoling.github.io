@@ -379,6 +379,10 @@ img {
   transform: translateY(4px);
 }
 
+#contact-link {
+  font-size: 16px;
+}
+
 /* About Page */
 .about-header {
   font-size: 40px;
