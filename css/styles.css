@@ -48,7 +48,7 @@ body {
   z-index: 999;
 }
 
-/* Logo sizing */
+/* Logo Style*/
 #logo {
   height: 100px;
   margin: 10px 0px 10px 0px;
@@ -64,7 +64,7 @@ body {
   }
 }
 
-/* Center nav links horizontally */
+/* Navbar Style */
 .navbar-collapse {
   flex-grow: 1;
   justify-content: center;
