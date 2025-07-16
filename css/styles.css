@@ -37,7 +37,6 @@ body {
   width: 75%;
 }
 
-
 /* Navigation Menu */
 .navbar {
   width: 100%;
@@ -445,6 +444,11 @@ img {
   font-size: 15px;
 }
 
+#about-contact-button {
+  font-size: 15px;
+  text-decoration:underline;
+}
+
 /* Contact Page */
 .contact-header {
   text-align: center;
@@ -538,6 +542,7 @@ input:placeholder-shown {
   color: green;
 }
 
+/* About Page courses text style */
 #w3schools, #freecodecamp, #udemy {
   font-size: 15px;
 }
@@ -550,6 +555,7 @@ html, body {
   flex-direction: column;
 }
 
+/* Footer Style */
 .footer {
   margin-top: auto;
   text-align: center;
