@@ -137,7 +137,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   .date-container, .time, .location-container {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -158,3 +158,4 @@ body {
     font-size: 14px;
 }
 }
+
